@@ -1,9 +1,220 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
-  <diagram name="Page-1" id="gGIrhC9370zBRaWoIG_0">
-    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram name="Chính sách xóa file" id="gGIrhC9370zBRaWoIG_0">
+    <mxGraphModel dx="2316" dy="1171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="6SatZDwyulJrnAe1QvL4-37" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Giai đoạn 3: Dọn dẹp hoàn toàn" vertex="1">
+          <mxGeometry height="608" width="330" x="866" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-38" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Giai đoạn 2: Ân hạn - Chỉ còn kho lạnh" vertex="1">
+          <mxGeometry height="880" width="340" x="20" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-39" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Giai đoạn 1: Hết hạn License - Read-only" vertex="1">
+          <mxGeometry height="490" width="625" x="638" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-40" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="License Check Daily Cron" vertex="1">
+          <mxGeometry height="54" width="239" x="1220" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-41" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="License Valid?" vertex="1">
+          <mxGeometry height="153" width="153" x="1263" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-42" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Normal Operation&#xa;Full Access &amp; Render" vertex="1">
+          <mxGeometry height="78" width="260" x="1286" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-43" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Day 0: Chế độ Read-only" vertex="1">
+          <mxGeometry height="54" width="237" x="673" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-44" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Khóa nút Render/Create New&#xa;Chỉ cho phép View/Download cũ" vertex="1">
+          <mxGeometry height="102" width="260" x="665" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-45" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Nhắc nhở gia hạn trên UI" vertex="1">
+          <mxGeometry height="54" width="241" x="979" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-46" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Mục tiêu: Giảm tải server, khuyến khích renew" vertex="1">
+          <mxGeometry height="78" width="260" x="665" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-47" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="Day 7?" vertex="1">
+          <mxGeometry height="99" width="99" x="387" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-48" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Tiếp tục Read-only" vertex="1">
+          <mxGeometry height="54" width="196" x="395" y="717" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-49" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Day 7+: Thời gian ân hạn - Kho lạnh" vertex="1">
+          <mxGeometry height="78" width="260" x="65" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-50" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Trigger Script Takeout:&#xa;Quét tất cả Video Final trong S3" vertex="1">
+          <mxGeometry height="102" width="260" x="55" y="906" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-51" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Tạo Presigned URLs&#xa;(hạn 30 ngày)" vertex="1">
+          <mxGeometry height="78" width="260" x="55" y="1155" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-52" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Gửi Email cho khách:&#xa;Danh sách link tải + Cảnh báo hủy VPS trong ... ngày" vertex="1">
+          <mxGeometry height="126" width="260" x="55" y="1283" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-53" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Terminate VPS qua API&#xa;(AWS/Hetzner)" vertex="1">
+          <mxGeometry height="78" width="260" x="55" y="1459" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-55" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="Day 30 sau hủy VPS?" vertex="1">
+          <mxGeometry height="198" width="198" x="498" y="858" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-56" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Giữ S3 bucket với Presigned URLs" vertex="1">
+          <mxGeometry height="78" width="260" x="395" y="1155" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-57" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Dọn dẹp hoàn toàn" vertex="1">
+          <mxGeometry height="54" width="197" x="933" y="1167" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-58" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Áp dụng S3 Lifecycle Rule:&#xa;Tự động xóa objects sau 30 ngày" vertex="1">
+          <mxGeometry height="102" width="260" x="901" y="1295" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-59" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Xóa Bucket S3 + IP tĩnh + DNS record" vertex="1">
+          <mxGeometry height="78" width="260" x="901" y="1459" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-60" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Chi phí = 0&#xa;Dữ liệu xóa vĩnh viễn" vertex="1">
+          <mxGeometry height="78" width="260" x="901" y="1611" as="geometry" />
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-61" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-40" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-41" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-62" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-41" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.32;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-42" value="Yes - Active">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1339" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-63" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-42" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.56;exitY=0;entryX=0.95;entryY=1;rounded=0;" target="6SatZDwyulJrnAe1QvL4-41" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1442" y="351" />
+              <mxPoint x="1442" y="314" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-64" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-41" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.6;entryX=0.5;entryY=-0.01;rounded=0;" target="6SatZDwyulJrnAe1QvL4-43" value="No - Expired">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="791" y="314" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-65" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-43" style="curved=1;startArrow=none;endArrow=block;exitX=0.51;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-44" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="479" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-66" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-43" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.95;entryX=0.5;entryY=-0.01;rounded=0;" target="6SatZDwyulJrnAe1QvL4-45" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1096" y="479" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-67" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-44" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-46" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-68" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-43" style="curved=1;startArrow=none;endArrow=block;exitX=0.35;exitY=0.99;entryX=1;entryY=0.36;rounded=0;" target="6SatZDwyulJrnAe1QvL4-47" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="709" y="479" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-69" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-47" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.38;entryY=-0.01;rounded=0;" target="6SatZDwyulJrnAe1QvL4-48" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="437" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-70" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-48" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.62;exitY=-0.01;entryX=1;entryY=0.89;rounded=0;" target="6SatZDwyulJrnAe1QvL4-47" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="680" />
+              <mxPoint x="550" y="643" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-71" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-47" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.68;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-49" value="Yes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="643" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-72" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-49" style="curved=1;startArrow=none;endArrow=block;exitX=0.48;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-50" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="808" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-73" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-50" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-51" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-74" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-51" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-52" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-75" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-52" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-53" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-77" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-49" style="curved=1;startArrow=none;endArrow=block;exitX=0.67;exitY=1;entryX=0;entryY=0.31;rounded=0;" target="6SatZDwyulJrnAe1QvL4-55" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="268" y="808" />
+              <mxPoint x="268" y="833" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-78" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-55" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.99;entryX=0.34;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-56" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="457" y="1093" />
+              <mxPoint x="457" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-79" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-56" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.67;exitY=0;entryX=0.5;entryY=1;rounded=0;" target="6SatZDwyulJrnAe1QvL4-55" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="598" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-80" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-55" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.66;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-57" value="Yes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1031" y="1093" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-81" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-57" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-58" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-82" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-58" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-59" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6SatZDwyulJrnAe1QvL4-83" edge="1" parent="1" source="6SatZDwyulJrnAe1QvL4-59" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="6SatZDwyulJrnAe1QvL4-60" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
