@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
   <diagram name="Chính sách xóa file" id="gGIrhC9370zBRaWoIG_0">
-    <mxGraphModel dx="2316" dy="1171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1489" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,7 +31,7 @@
         <mxCell id="6SatZDwyulJrnAe1QvL4-45" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Nhắc nhở gia hạn trên UI" vertex="1">
           <mxGeometry height="54" width="241" x="979" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="6SatZDwyulJrnAe1QvL4-46" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Mục tiêu: Giảm tải server, khuyến khích renew" vertex="1">
+        <mxCell id="6SatZDwyulJrnAe1QvL4-46" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Mục tiêu: Giảm tải server, khuyến khích gia hạn" vertex="1">
           <mxGeometry height="78" width="260" x="665" y="705" as="geometry" />
         </mxCell>
         <mxCell id="6SatZDwyulJrnAe1QvL4-47" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="Day 7?" vertex="1">
@@ -41,7 +41,7 @@
           <mxGeometry height="54" width="196" x="395" y="717" as="geometry" />
         </mxCell>
         <mxCell id="6SatZDwyulJrnAe1QvL4-49" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Day 7+: Thời gian ân hạn - Kho lạnh" vertex="1">
-          <mxGeometry height="78" width="260" x="65" y="705" as="geometry" />
+          <mxGeometry height="78" width="260" x="60" y="705" as="geometry" />
         </mxCell>
         <mxCell id="6SatZDwyulJrnAe1QvL4-50" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Trigger Script Takeout:&#xa;Quét tất cả Video Final trong S3" vertex="1">
           <mxGeometry height="102" width="260" x="55" y="906" as="geometry" />
@@ -49,7 +49,7 @@
         <mxCell id="6SatZDwyulJrnAe1QvL4-51" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Tạo Presigned URLs&#xa;(hạn 30 ngày)" vertex="1">
           <mxGeometry height="78" width="260" x="55" y="1155" as="geometry" />
         </mxCell>
-        <mxCell id="6SatZDwyulJrnAe1QvL4-52" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Gửi Email cho khách:&#xa;Danh sách link tải + Cảnh báo hủy VPS trong ... ngày" vertex="1">
+        <mxCell id="6SatZDwyulJrnAe1QvL4-52" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Gửi Email cho khách:&#xa;Danh sách link tải + Cảnh báo hủy VPS trong 30 ngày" vertex="1">
           <mxGeometry height="126" width="260" x="55" y="1283" as="geometry" />
         </mxCell>
         <mxCell id="6SatZDwyulJrnAe1QvL4-53" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Terminate VPS qua API&#xa;(AWS/Hetzner)" vertex="1">
